@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP LINKS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- FONT AWESOME LINK -->
+    <script src="https://kit.fontawesome.com/2fd2b74342.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Poppins:wght@200;300;400;500&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- LOTTIE ICON LINK -->
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
+    <title>Fode</title>
+</head>
+
+<body>
+    <!-- Android Viewport height fix-->
+    <script type="text/javascript">
+        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1; //&& ua.indexOf("mobile");
+        if (isAndroid) {
+            document.write('<meta name="viewport" content="width=device-width,height=' + window.innerHeight + ', initial-scale=1.0">');
+        }
+    </script>
+    <div class="main-parent-box">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+        <main class="main-landing-page">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Fode<span>.</span></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Delivery</a></li>
+                            <li><a href="#">Dining Out</a></li>
+                            <li><a href="#">Night Life</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Others<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#about-us">About Us</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                    <li><a href="#privacy">Privacy and terms</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="lnd-main-content-box">
+                <div class="lmcb-left-box">
+                    <div class="container-fluid cf-nav-top">
+                        <h2>Great restaurants in Bhubaneswar,<span> delivering to you</span></h2>
+                        <p>Set exact location to find the right restaurants near you.</p>
+                        <form action=" /action_page.php">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="lmcb-right-box">
+                    <img src="/images/indian-food-png.png" alt="Indian Food" class="">
+                </div>
+            </div>
+            <div class="pro-box-display">
+                <div class="pbd-food-display">
+                    <div class="pdb-box">
+                        <div>
+                            <img src="/images/indian-thali.png" alt="">
+                        </div>
+                        <div class="pdb-txt">
+                            <a href="">
+                                <h4>Indian Thali</h4>
+                                <p>Keyar's Food</p>
+                                <h4>Rs. <span>160</span></h4>
+                            </a>
+                        </div>
+                        <div class="pdb-items">
+                            <i class="fas fa-plus incr"></i>
+                            <span id="times">0</span>
+                            <i class="fas fa-minus decr"></i>
+                        </div>
+                    </div>
+                    <div class="pdb-box">
+                        <div>
+                            <img src="/images/chicken-biriyani.png" alt="">
+                        </div>
+                        <div class="pdb-txt swap">
+                            <a href="">
+                                <h4>Chicken Biriyani</h4>
+                                <p>Venus In</p>
+                                <h4>Rs. <span>250</span></h4>
+                            </a>
+                        </div>
+                        <div class="pdb-items">
+                            <i class="fas fa-plus incr"></i>
+                            <span id="time">0</span>
+                            <i class="fas fa-minus decr"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-txt">
+                    <h2>Fastest <span>Delivery</span> & Easy<span> Pickup</span></h2>
+                    <button class="btn-on"><a href="#"></a>Order Now</button>
+                </div>
+            </div>
+        </main>
+        <!-- ---------------------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------------------------------------- -->
+        <section class="services">
+            <div id="services" class="container-fluid text-center cf-s-tc">
+                <h2>SERVICES</h2>
+                <h5>What we offer</h5>
+                <br>
+                <div class="row slideanim cf-services">
+                    <div class="col-sm-4 rscsm">
+                        <lord-icon src="https://cdn.lordicon.com/lthhecik.json" trigger="loop"
+                            colors="primary:#cb202d,secondary:#2d2d2d" style="width:150px;height:150px">
+                        </lord-icon>
+                        <h4>Easy To Order</h4>
+                    </div>
+                    <div class="col-sm-4 rscsm">
+                        <lord-icon src="https://cdn.lordicon.com/uetqnvvg.json" trigger="loop"
+                            colors="primary:#cb202d,secondary:#2d2d2d" style="width:150px;height:150px">
+                        </lord-icon>
+                        <h4>Fastest Delivery</h4>
+                    </div>
+                    <div class="col-sm-4 rscsm">
+                        <lord-icon src="https://cdn.lordicon.com/jpdtnwas.json" trigger="loop"
+                            colors="primary:#cb202d,secondary:#2d2d2d" style="width:150px;height:150px">
+                        </lord-icon>
+                        <h4>Best Quality</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="home-content">
+            <div class="container">
+                <div class="row" id="slider-text">
+                    <div class="col-md-6">
+                        <h2>Inspiration for your first order</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid foods-av">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-xs-12 col-sm-6 col-md-2 cont-item-box">
+                                        <a href="#"><img src="/images/burger.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">Burger</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/biriyani.webp"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">biriyani</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/cake.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">cake</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/chicken.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">chicken</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/daal.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">daal</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/mushroom.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">mushroom</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/noodles.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">noodles</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/panner.webp"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">paneer</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/paratha.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">paratha</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/pizza.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">pizza</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/rolls.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">rolls</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#"><img src="/images/thali.avif"
+                                                class="img-responsive center-block"></a>
+                                        <h4 class="text-center">Thali</h4>
+                                        <div class="button">
+                                            <button type="button">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="slider-control">
+                                <a class="left carousel-control" href="#itemslider" data-slide="prev"><img
+                                        src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png"
+                                        alt="Left" class="img-responsive"></a>
+                                <a class="right carousel-control" href="#itemslider" data-slide="next"><img
+                                        src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png" alt="Right"
+                                        class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="home-content">
+            <h2 class="hc-h2">Order Food online in Bhubaneswar</h2>
+            <div class="res-box-main slideanim">
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-1.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 15% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">40% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">43 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Mr Roseya</h3>
+                                    <div class="rat-box">
+                                        <h3>4.1<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Chinese, Fast Food, North Indian, Rolls</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-2.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">20% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">30 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Domino's Pizza</h3>
+                                    <div class="rat-box">
+                                        <h3>4.4<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Pizza, Fast Food</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-3.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">25% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">35 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Namaste Reloaded</h3>
+                                    <div class="rat-box">
+                                        <h3>3.8<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Chinese</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-4.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 30% OFF</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">40 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Wow! Momo</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Momos, Tibetan, Fast Food</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-5.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 20% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">10% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">27 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Green Chillyz</h3>
+                                    <div class="rat-box">
+                                        <h3>4.0<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Biryani, Chinese, Kebab</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-6.avif" alt="Restaurant Card">iv>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">22% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">22 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Chaturbhuja Legacy</h3>
+                                    <div class="rat-box">
+                                        <h3>3.9<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Chinese, Mughlai</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="res-box-main slideanim">
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-7.avif" alt="Restaurant Card">>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">40% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">31 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Raghav's - Hotel Priya</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">South Indian, North Indian</h3>
+                                    <h3 class="ep-prc">₹120 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-8.avif" alt="Restaurant Card">
+                                <div class="cb-time">
+                                    <h5 class="dt-time">35 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>KFC</h3>
+                                    <div class="rat-box">
+                                        <h3>4.1<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Burger, Fast Food, Beverages, Desserts</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-9.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">21% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">51 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Chancellor Restaurant</h3>
+                                    <div class="rat-box">
+                                        <h3>3.8<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Fast Food</h3>
+                                    <h3 class="ep-prc">₹90 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-10.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 20% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">10% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">20 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Keventers - Milkshakes & Ice Creams</h3>
+                                    <div class="rat-box">
+                                        <h3>4.3<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Beverages, Desserts, Ice Cream</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-11.avif" alt="Restaurant Card">>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">40% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">40 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Chhapan Bhog</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Mithai, North Indian, Street Food</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-12.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">15% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">39 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Shree Lal Food Plaza</h3>
+                                    <div class="rat-box">
+                                        <h3>3.8<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, South Indian, Chinese, Desserts, Beverages</h3>
+                                    <h3 class="ep-prc">₹110 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="res-box-main slideanim">
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-13.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">35% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">24 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Afiya Delight</h3>
+                                    <div class="rat-box">
+                                        <h3>3.6<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Biryani, North Indian, Fast Food</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-14.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 30% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">10% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">50 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>House Of Biryani</h3>
+                                    <div class="rat-box">
+                                        <h3>3.6<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Rolls, Chinese, Mughlai, North Indian</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-15.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 45% OFF</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">36 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Oberai Bakers & Cafe</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Desserts, Chinese, Fast Food, Continental, Pizza</h3>
+                                    <h3 class="ep-prc">₹160 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-16.avif" alt="Restaurant Card">
+                                <div class="cb-time">
+                                    <h5 class="dt-time">40 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Venus Inn Restaurant</h3>
+                                    <div class="rat-box">
+                                        <h3>3.9<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, South Indian, Chinese, Biryani, Fast Food</h3>
+                                    <h3 class="ep-prc">₹130 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-17.avif" alt="Restaurant Card">
+                                <div class="cb-time">
+                                    <h5 class="dt-time">30 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Dalma</h3>
+                                    <div class="rat-box">
+                                        <h3>3.9<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Odia Food</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-18.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">10% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">32 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Mitu Bhai Dahibara Aloodum</h3>
+                                    <div class="rat-box">
+                                        <h3>4.0<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Street Food</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="res-box-main slideanim">
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-19.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 20% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">20% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">44 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Truptee Restaurant</h3>
+                                    <div class="rat-box">
+                                        <h3>4.1<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, South indian, Chinese, Beverages, Fast Food</h3>
+                                    <h3 class="ep-prc">₹140 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-20.avif" alt="Restaurant Card">
+                                <div class="cb-time">
+                                    <h5 class="dt-time">36 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Adda Unplugged</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Cafe, Continental, North Indian, Kebab, Mexican, Chinese,
+                                        Beverages</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-21.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">30% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">30 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Geetanjali Restaurant</h3>
+                                    <div class="rat-box">
+                                        <h3>3.7<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Odia Food</h3>
+                                    <h3 class="ep-prc">₹140 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-22.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">10% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">38 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Brown & Cream Parlour</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Bakery, Desserts, Fast Food</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-23.avif" alt="Restaurant Card">
+                                <div class="cb-time">
+                                    <h5 class="dt-time">42 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Monginis Cake Shop</h3>
+                                    <div class="rat-box">
+                                        <h3>4.3<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Bakery</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-24.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">20% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">43 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Thali Junction</h3>
+                                    <div class="rat-box">
+                                        <h3>3.7<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Mughlai, Seafood</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="res-box-main slideanim">
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-25.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 15% OFF</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">29 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Barbecue Odisha</h3>
+                                    <div class="rat-box">
+                                        <h3>4.0<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Chinese, BBQ, Biryani</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-26.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 15% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">40% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">43 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Barbeque Nation</h3>
+                                    <div class="rat-box">
+                                        <h3>3.6<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Mediterranean, Continental, Asian, Arabian</h3>
+                                    <h3 class="ep-prc">₹200 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-27.avif" alt="Restaurant Card">
+                                <div class="cb-pro">
+                                    <h5 class="dt-pro-re">PRO Extra 15% OFF</h5>
+                                </div>
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">20% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">34 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Rolls and Wheels</h3>
+                                    <div class="rat-box">
+                                        <h3>4.1<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Rolls</h3>
+                                    <h3 class="ep-prc">₹120 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-28.webp" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">12% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">35 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Radha Sweets</h3>
+                                    <div class="rat-box">
+                                        <h3>4<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Bakery, Desserts, Fast Food</h3>
+                                    <h3 class="ep-prc">₹200 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-29.avif" alt="Restaurant Card">
+                                <div class="cb-disc">
+                                    <h5 class="dt-disc">40% off</h5>
+                                </div>
+                                <div class="cb-time">
+                                    <h5 class="dt-time">37 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>Mainland China</h3>
+                                    <div class="rat-box">
+                                        <h3>4.2<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">Chinese, Asian, Sushi, Japanese, Thai</h3>
+                                    <h3 class="ep-prc">₹100 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="res-display">
+                    <div class="cont-box">
+                        <a href="">
+                            <div class="image">
+                                <img src="/images/res-30.avif" alt="Restaurant Card">
+                                <div class="cb-time">
+                                    <h5 class="dt-time">55 min</h5>
+                                </div>
+                            </div>
+                            <div class="con-food-txt">
+                                <div class="name-rat">
+                                    <h3>The Canteen</h3>
+                                    <div class="rat-box">
+                                        <h3>3.5<i class="fas fa-star"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="epln-prc">
+                                    <h3 class="ep-epln">North Indian, Fast Food, Chinese</h3>
+                                    <h3 class="ep-prc">₹150 for one</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bttn">
+                <button class="btn-on"><a href="#"></a>Show More</button>
+            </div>
+        </section>
+        <section class="cities">
+            <h2>Cities we deliver to</h2>
+            <div class="inner-cities">
+                <ul>
+                    <li><a href="#" class="ul-links">Agartala</a></li>
+                    <li><a href="#" class="ul-links">Agra</a></li>
+                    <li><a href="#" class="ul-links">Ahemdabad</a></li>
+                    <li><a href="#" class="ul-links">Ahmednagar</a></li>
+                    <li><a href="#" class="ul-links">Allahbad</a></li>
+                    <li><a href="#" class="ul-links">Amritsar</a></li>
+                    <li><a href="#" class="ul-links">Balasore</a></li>
+                    <li><a href="#" class="ul-links">Bangalore</a></li>
+                    <li><a href="#" class="ul-links">Bhilai</a></li>
+                    <li><a href="#" class="ul-links">Bhopal</a></li>
+                    <li><a href="#" class="ul-links">Bhubaneswar</a></li>
+                    <li><a href="#" class="ul-links">Bokaro</a></li>
+                    <li><a href="#" class="ul-links">Chandigarh</a></li>
+                    <li><a href="#" class="ul-links">Chennai</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="ul-links">Coimbatore</a></li>
+                    <li><a href="#" class="ul-links">Darjeeling</a></li>
+                    <li><a href="#" class="ul-links">Dehradun</a></li>
+                    <li><a href="#" class="ul-links">Delhi</a></li>
+                    <li><a href="#" class="ul-links">Dharmashala</a></li>
+                    <li><a href="#" class="ul-links">Faridabad</a></li>
+                    <li><a href="#" class="ul-links">Gangtok</a></li>
+                    <li><a href="#" class="ul-links">Gurgaon</a></li>
+                    <li><a href="#" class="ul-links">Guwahati</a></li>
+                    <li><a href="#" class="ul-links">Gwalior</a></li>
+                    <li><a href="#" class="ul-links">Haridwar</a></li>
+                    <li><a href="#" class="ul-links">Hyderabad</a></li>
+                    <li><a href="#" class="ul-links">Indore</a></li>
+                    <li><a href="#" class="ul-links">ItnaNagar</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="ul-links">Jaipur</a></li>
+                    <li><a href="#" class="ul-links">Jammu</a></li>
+                    <li><a href="#" class="ul-links">Jamshedpur</a></li>
+                    <li><a href="#" class="ul-links">Kanpur</a></li>
+                    <li><a href="#" class="ul-links">Kendujhar</a></li>
+                    <li><a href="#" class="ul-links">Kharagpur</a></li>
+                    <li><a href="#" class="ul-links">Kochi</a></li>
+                    <li><a href="#" class="ul-links">Kolkata</a></li>
+                    <li><a href="#" class="ul-links">Kota</a></li>
+                    <li><a href="#" class="ul-links">Lonavala</a></li>
+                    <li><a href="#" class="ul-links">Lucknow</a></li>
+                    <li><a href="#" class="ul-links">Madurai</a></li>
+                    <li><a href="#" class="ul-links">Mahabaleswar</a></li>
+                    <li><a href="#" class="ul-links">Manali</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="ul-links">Mirzapur</a></li>
+                    <li><a href="#" class="ul-links">Mumbai</a></li>
+                    <li><a href="#" class="ul-links">Mysore</a></li>
+                    <li><a href="#" class="ul-links">Nagpur</a></li>
+                    <li><a href="#" class="ul-links">Nainital</a></li>
+                    <li><a href="#" class="ul-links">Patna</a></li>
+                    <li><a href="#" class="ul-links">Pondicherry</a></li>
+                    <li><a href="#" class="ul-links">Bangalore</a></li>
+                    <li><a href="#" class="ul-links">Pune</a></li>
+                    <li><a href="#" class="ul-links">Puri</a></li>
+                    <li><a href="#" class="ul-links">Raipur</a></li>
+                    <li><a href="#" class="ul-links">Ranchi</a></li>
+                    <li><a href="#" class="ul-links">Roorkee</a></li>
+                    <li><a href="#" class="excep ul-links">Show More</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <ul class="company">
+                <li><a href="#" class="ul-links" id="about-us">About Us</a></li>
+                <li><a href="#" class="ul-links">Teams</a></li>
+                <li><a href="#" class="ul-links">Career</a></li>
+                <li><a href="#" class="ul-links">Fode Super</a></li>
+                <li><a href="#" class="ul-links">Fode Corporate</a></li>
+            </ul>
+            <ul class="contact" id="contact">
+                <li><a href="" class="ul-links">Help & Support</a></li>
+                <li><a href="" class="ul-links">Patner With Us</a></li>
+                <li><a href="" class="ul-links">Ride with Us</a></li>
+            </ul>
+            <ul class="legal" id="privacy">
+                <li><a href="" class="ul-links">Terms And Conditions</a></li>
+                <li><a href="" class="ul-links">Refund and Cancellation</a></li>
+                <li><a href="" class="ul-links">Privacy Policy</a></li>
+                <li><a href="" class="ul-links">Cookie Policy</a></li>
+                <li><a href="" class="ul-links">Phishing and Fraud</a></li>
+            </ul>
+        </footer>
+        <div class="social-f">
+            <div class="social">
+                <ul>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <div class="cpy-rt">
+                Fode. All Rights Reserved&copy; 2021.
+            </div>
+        </div>
+    </div>
+    <script src="/JAVASCRIPT/script.js"></script>
+</body>
+
+</html>

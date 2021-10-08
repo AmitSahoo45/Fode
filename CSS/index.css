@@ -493,6 +493,12 @@ ul {
     margin: 0 auto;
 }
 
+.left i, .right i{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 8rem;
+}
+
 
 @media screen and (max-width: 992px) {
     #slider-control img {
